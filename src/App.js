@@ -26,11 +26,12 @@ class App extends React.Component {
       itemList: newList,
     })
   }
-  render() {
+  render() { //Main
   return (
     <div className="App">
       <Container fluid>
-        <h1> To-Do List </h1><br/>
+        <h1> To-Do List </h1>
+        <hr/><br/>
          <Form changeHandler={this.changeHandler}
                submitHandler={this.submitHandler}/>
          <List itemList={this.state.itemList} />

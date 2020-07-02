@@ -2,13 +2,27 @@
 
 html, body {
   margin: auto;
+  background-image: url(./background.jpg);
+  
+}
+
+hr {
+  border-top: 1px solid white !important;
+  width: 200px;
 }
 
 .App {
-  padding-top: 10px;
+  padding-top: 50px;
   margin: auto;
   text-align: center;
   font-family: 'Quicksand';
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .App {
+    margin-top: 30px;
+  }
 }
 
 .button {
@@ -22,7 +36,7 @@ html, body {
   margin-bottom: 10px;
 }
 .add {
-  color: green;
+  color: white;
 }
 
 ::placeholder {
@@ -36,5 +50,6 @@ html, body {
 
 .remove {
   margin-left: 15px;
-  color: darkred;
+  color: red;
+  display: none;
 }
