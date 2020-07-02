@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Quicksand:wght@300&display=swap");
+
+html, body {
+  margin: auto;
+}
+
+.App {
+  padding-top: 10px;
+  margin: auto;
+  text-align: center;
+  font-family: 'Quicksand';
+}
+
+.button {
+  background: transparent;
+  border: none;
+  margin-left: 5px;
+}
+
+.addItem {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.add {
+  color: green;
+}
+
+::placeholder {
+  text-align: center;
+}
+
+.item {
+  font-size: 25px;
+  display: inline;
+}
+
+.remove {
+  margin-left: 15px;
+  color: darkred;
+}
