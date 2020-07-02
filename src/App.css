@@ -3,7 +3,7 @@
 html, body {
   margin: auto;
   background-image: url(./background.jpg);
-  
+  background-repeat: 
 }
 
 hr {
@@ -46,10 +46,30 @@ hr {
 .item {
   font-size: 25px;
   display: inline;
+  margin-left: 5px;
 }
 
 .remove {
-  margin-left: 15px;
+  margin-left: 5px;
   color: red;
   display: none;
+}
+
+.removeButton {
+  background: transparent;
+  border: none;
+  padding-right: 11px;
+  margin-left: 5px;
+}
+
+.itemSplit {
+  margin-top: 10px;
+  width: 500px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .itemSplit {
+    width: 100%;
+  }
 }

@@ -26,6 +26,7 @@ class App extends React.Component {
       itemList: newList,
     })
   }
+
   render() { //Main
   return (
     <div className="App">
@@ -46,7 +47,7 @@ const Form = props => {
   return(
       <div>
           <form onSubmit={props.submitHandler}>
-              <input 
+              <input required
               type="text" className="addItem" name="item" placeholder="Add an item!" 
               onChange={props.changeHandler} value={props.item}
               />
@@ -61,7 +62,10 @@ const List = props => ( //functional component
     props.itemList.length > 0 ? props.itemList.map((item, i) => ( //if list isn't empty, display w checkbox
         <div key={i}>
             <input type="checkbox"/>
-            <p className="item"> {item} <FontAwesomeIcon className="remove" icon={faMinusCircle} size="xs"/></p>
+            <p className="item"> {item} 
+              <button 
+              className="removeButton"><FontAwesomeIcon className="remove" icon={faMinusCircle} size="xs"/></button></p>
+              <hr className="itemSplit"/>
         </div>
     )) : //else
     <h3>List is currently empty! </h3> //display this instead
