@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/react-todo-list/static/media/background.1d075139.jpg"
   },
   {
-    "revision": "39b032e2e44daf83b12f4dc81b147453",
+    "revision": "0d8f109c7fcff47dd07c87a84ed02455",
     "url": "/react-todo-list/index.html"
   }
 ];
