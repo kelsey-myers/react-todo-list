@@ -27,6 +27,14 @@ class App extends React.Component {
     })
   }
 
+  removeHandler(i) {
+    let newList = [...this.state.itemList]
+    newList.splice(i, 1);
+    this.setState({
+      newList: newList,
+    })
+  } 
+
   render() { //Main
   return (
     <div className="App">
@@ -35,7 +43,7 @@ class App extends React.Component {
         <hr/><br/>
          <Form changeHandler={this.changeHandler}
                submitHandler={this.submitHandler}/>
-         <List itemList={this.state.itemList} />
+         <List itemList={this.state.itemList}/>
       </Container>
     </div>
   );
@@ -58,7 +66,7 @@ const Form = props => {
 }
 
 //List component
-const List = props => ( //functional component
+const List = (props) => ( //functional component
     props.itemList.length > 0 ? props.itemList.map((item, i) => ( //if list isn't empty, display w checkbox
         <div key={i}>
             <input type="checkbox"/>
